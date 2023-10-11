@@ -41,6 +41,7 @@ main {
     background: #141922;
     color: white;
     width: calc(100% - 3em);
+    overflow: auto;
 }
 
 .secondContainer {
@@ -53,11 +54,11 @@ main {
         display: flex;
         flex-wrap: wrap;
         background: teal;
-        justify-content: space-between;
     }
 
     .song {
-        width: calc(100% / 2 - 0.5em);
+        width: calc(100% / 2);
+        padding: 0.5em;
     }
 
     .song img {
@@ -74,10 +75,16 @@ main {
     .mainContainer {
         width: calc(100% - 15em);
     }
+}
 
-    /* Songs */
+@media screen and (min-width: 800px) {
+    .song {
+        width: calc(100% / 4);
+    }
+}
 
-    /* .song img {
-        max-width: 60%;
-    } */
+@media screen and (min-width: 1200px) {
+    .song {
+        width: calc(100% / 6);
+    }
 }
