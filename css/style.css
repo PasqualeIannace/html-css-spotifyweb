@@ -6,9 +6,78 @@
 
 body {
     font-family: sans-serif;
+    height: 100vh;
 }
 
 footer {
-    background: #333333;
+    background: #282828;
     color: white;
+    height: 6em;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 6em);
+}
+
+/* NAV MENU */
+
+.nav {
+    background-color: black;
+    color: white;
+    width: 3em;
+}
+
+.upgrade {
+    background-color: #2828284f;
+}
+
+/* CONTENUTO MAIN */
+
+.mainContainer {
+    background: #141922;
+    color: white;
+    width: calc(100% - 3em);
+}
+
+.secondContainer {
+    padding: 1em;
+}
+
+    /* Songs */
+
+    .songContainer {
+        display: flex;
+        flex-wrap: wrap;
+        background: teal;
+        justify-content: space-between;
+    }
+
+    .song {
+        width: calc(100% / 2 - 0.5em);
+    }
+
+    .song img {
+        max-width: 100%;
+    }
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 630px) {
+    .nav {
+        width: 15em;
+    }
+
+    .mainContainer {
+        width: calc(100% - 15em);
+    }
+
+    /* Songs */
+
+    /* .song img {
+        max-width: 60%;
+    } */
 }
