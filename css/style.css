@@ -16,6 +16,9 @@ footer {
     width: 100%;
     position: fixed;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
@@ -31,6 +34,26 @@ main {
 
 .wid2 {
     width: 2em;
+}
+
+.wid3 {
+    width: 3em;
+}
+
+.wid4 {
+    width: 4em;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.mT07 {
+    margin-top: 0.7em;
+}
+
+.font08 {
+    font-size: 0.8em;
 }
 
 .center {
@@ -115,7 +138,57 @@ main {
         max-width: 100%;
     }
 
-/* MEDIA QUERY */
+/* CONTENUTO FOOTER */
+
+.footL,
+.footC,
+.footR {
+    background: palevioletred;
+}
+
+.footL {
+    display: flex;
+    align-items: center;
+}
+
+.footLmid {
+    padding-left: 1em;
+    margin-right: 2em;
+}
+
+    /* Footer mid */
+    .footC {
+        height: 100%;
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        width: 35em;
+    }
+
+    .ftTop {
+        height: 50%;
+        text-align: center;
+        letter-spacing: 0.5em;
+    }
+
+    .ftBot {
+        display: flex;
+        height: 50%;
+    }
+
+    .bar {
+        flex-grow: 1;
+        background-color: #5A5A5A;
+        min-width: 11em;
+        max-height: 0.3em;
+        border-radius: 1em;
+    }
+
+.imgFoot {
+    padding-top: 4px;
+}
+
+/* MEDIA QUERY ***********************************************************/
 
 @media screen and (min-width: 630px) {
     .nav {
