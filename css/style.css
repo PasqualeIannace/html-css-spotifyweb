@@ -85,6 +85,14 @@ a {
     color: #717171;
 }
 
+.paddingContainer {
+    padding: 1.5em 0.5em;
+}
+
+.borderR50 {
+    border-radius: 50%;
+}
+
 /* NAV MENU */
 
 .logo {
@@ -190,8 +198,50 @@ a {
     overflow: auto;
 }
 
+.upgrade {
+    height: 5em;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1em;
+}
+
+.upBtn {
+    border: 1px solid;
+    color: white;
+    border-radius: 2em;
+    padding: 0.8em 3em;
+}
+
+.menu {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0.5em 1em;
+    display: inline-block;
+}
+
+.greenBrdBot {
+    border-bottom: 0.2em solid #ADFF2E;
+}
+
 .secondContainer {
     padding: 1em;
+}
+
+.secondContainer p {
+    color: #717171;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-top: 0.5em;
+}
+
+.secondContainer h3 {
+    padding-top: 0.5em;
 }
 
     /* Songs */
@@ -199,7 +249,7 @@ a {
     .songContainer {
         display: flex;
         flex-wrap: wrap;
-        background: teal;
+        text-align: center;
     }
 
     .song {
