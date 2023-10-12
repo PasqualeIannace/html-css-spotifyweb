@@ -213,15 +213,10 @@ a {
 
 /* CONTENUTO FOOTER */
 
-.footL,
-.footC,
-.footR {
-    background: palevioletred;
-}
-
 .footL {
     display: flex;
     align-items: center;
+    margin-right: 0.5em;
 }
 
 .footLmid {
@@ -239,7 +234,7 @@ a {
 
     /* Footer mid */
     .footC {
-        height: 100%;
+        height: 80%;
         margin-top: 1.5em;
         display: flex;
         flex-direction: column;
@@ -261,12 +256,43 @@ a {
         flex-grow: 1;
         background-color: #5A5A5A;
         min-width: 11em;
-        max-height: 0.3em;
+        max-height: 0.4em;
         border-radius: 1em;
+        margin: 0.2em;
+    }
+
+    /* Footer Right */
+
+    .footR {
+        flex-direction: column;
+    }
+
+    .footR,
+    .volume {
+        display: flex;
+    }
+
+    .footR i {
+        margin: 0.3em 0.8em;
+    }
+
+    .volBar {
+        background-color: #5A5A5A;
+        min-width: 9em;
+        max-height: 0.4em;
+        border-radius: 1em;
+        margin: 0.5em 0.2em;
     }
 
 .imgFoot {
     padding-top: 4px;
+}
+
+.statusBar {
+    width: 15%;
+    height: 0.4em;
+    background: #C1C1C1;
+    border-radius: 1em;
 }
 
 /* MEDIA QUERY ***********************************************************/
@@ -302,11 +328,26 @@ a {
     .mainContainer {
         width: calc(100% - 15em);
     }
+
+    /* Footer */
+
 }
 
 @media screen and (min-width: 800px) {
     .song {
         width: calc(100% / 4);
+    }
+
+    .footR {
+        flex-direction: row;
+    }
+
+    .footR i {
+        margin: 0 0.8em;
+    }
+
+    .volBar {
+        margin: 0.2em;
     }
 }
 
