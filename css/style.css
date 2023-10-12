@@ -26,6 +26,11 @@ main {
     height: calc(100% - 6em);
 }
 
+a {
+    text-decoration: none;
+    color: #717171;
+}
+
 /* Classi Atomiche */
 
 .wid1 {
@@ -56,11 +61,36 @@ main {
     font-size: 0.8em;
 }
 
+.font1punto2 {
+    font-size: 1.2em;
+}
+
+.font3 {
+    font-size: 3em;
+}
+
 .center {
     text-align: center;
 }
 
+.hidden {
+    overflow: hidden;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: #717171;
+}
+
 /* NAV MENU */
+
+.logo {
+    width: 10em;
+    margin: 1em 0;
+}
 
 .nav {
     background-color: black;
@@ -104,9 +134,52 @@ main {
 }
 
 .largeTop {
+    height: 80%;
     display: flex;
     flex-direction: column;
 }
+
+.largeBot {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.largeBot hr {
+    margin-right: 1.5em;
+    border: 0.1em solid;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    margin: 0.1em 0;
+}
+
+.playH2 {
+    font-size: 1em;
+    margin: 2em 0 0.5em 0;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 30%;
+}
+
+.playlist a {
+    margin: 0.7em 0;
+}
+
+.lrgBot {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+
 
 /* CONTENUTO MAIN */
 
@@ -156,6 +229,14 @@ main {
     margin-right: 2em;
 }
 
+.greenBrd {
+    border-left: 0.2em solid #ADFF2E;
+}
+
+.blackBrd {
+    border-left: 0.2em solid black;
+}
+
     /* Footer mid */
     .footC {
         height: 100%;
@@ -191,8 +272,15 @@ main {
 /* MEDIA QUERY ***********************************************************/
 
 @media screen and (min-width: 630px) {
+    /* Nav Bar */
     .nav {
         width: 15em;
+    }
+
+    .largeTop > div,
+    .largeBot,
+    .logo {
+        padding-left: 1.5em;
     }
 
     nav .xsNav {
@@ -205,6 +293,12 @@ main {
         justify-content: space-between;
     }
 
+    .navLink > a,
+    .lrgBot > a {
+        margin-right: 0.5em;
+    }
+
+    /* Main */
     .mainContainer {
         width: calc(100% - 15em);
     }
