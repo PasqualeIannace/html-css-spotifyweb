@@ -93,6 +93,10 @@ a {
     border-radius: 50%;
 }
 
+.filter {
+    filter: invert(0.5);
+}
+
 /* NAV MENU */
 
 .logo {
@@ -339,10 +343,51 @@ a {
 }
 
 .statusBar {
+    position: relative;
     width: 15%;
     height: 0.4em;
     background: #C1C1C1;
     border-radius: 1em;
+}
+
+.playerBall {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    background-color: #C1C1C1;
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 50%;
+    display: none;
+}
+
+
+/* ANIMAZIONI */
+
+a:hover {
+    color: white;
+}
+
+.upBtn:hover {
+    padding: 1.2em 3.5em;
+    transition: 300ms;
+}
+
+.playBtn:hover {
+    font-size: 2.5em;
+    transition: 300ms;
+}
+
+.filterFix:hover {
+    filter: none;
+}
+
+.statusBar:hover {
+    background: #ADFF2E;
+}
+
+.statusBar:hover > .playerBall {
+    display: block;
 }
 
 /* MEDIA QUERY ***********************************************************/
