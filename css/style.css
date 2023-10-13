@@ -97,6 +97,10 @@ a {
     filter: invert(0.5);
 }
 
+.relative {
+    position: relative;
+}
+
 /* NAV MENU */
 
 .logo {
@@ -265,6 +269,21 @@ a {
         max-width: 100%;
     }
 
+    .mask {
+        position: absolute;
+        background: #00000099;
+        height: 98%;
+        width: 100%;
+        top: 0;
+        display: none;
+    }
+
+    .positionFix {
+        position: absolute;
+        top: 50%;
+        left: 42%;
+    }
+
 /* CONTENUTO FOOTER */
 
 .footL {
@@ -388,6 +407,11 @@ a:hover {
 
 .statusBar:hover > .playerBall {
     display: block;
+}
+
+.relative:hover > .mask {
+    display: block;
+    transition: 300ms;
 }
 
 /* MEDIA QUERY ***********************************************************/
