@@ -97,8 +97,9 @@ a {
     filter: invert(0.5);
 }
 
-.relative {
+.relativeFlex {
     position: relative;
+    display: flex;
 }
 
 /* NAV MENU */
@@ -272,7 +273,7 @@ a {
     .mask {
         position: absolute;
         background: #00000099;
-        height: 98%;
+        height: 100%;
         width: 100%;
         top: 0;
         display: none;
@@ -289,7 +290,7 @@ a {
 .footL {
     display: flex;
     align-items: center;
-    margin-right: 0.5em;
+    margin: 0 0.5em;
 }
 
 .footLmid {
@@ -355,6 +356,7 @@ a {
         max-height: 0.4em;
         border-radius: 1em;
         margin: 0.5em 0.2em;
+        display: none;
     }
 
 .imgFoot {
@@ -409,7 +411,7 @@ a:hover {
     display: block;
 }
 
-.relative:hover > .mask {
+.relativeFlex:hover > .mask {
     display: block;
     transition: 300ms;
 }
@@ -449,7 +451,9 @@ a:hover {
     }
 
     /* Footer */
-
+    .volBar {
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 800px) {
